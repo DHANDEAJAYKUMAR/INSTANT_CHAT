@@ -8,9 +8,9 @@ import userRouter from "./routes/userRoutes.js";
 import messageRouter from "./routes/messageRoutes.js";
 
 const app = express(); 
-const httpServer = http.createServer(app);
+const server = http.createServer(app);
 
-export const io = new Server(httpServer, {
+export const io = new Server(server, {
   cors: { origin: "*" }
 });
 
@@ -25,8 +25,8 @@ io.on("connection", (socket) => {
     console.log("User Disconnected", userId);
     delete userSocketMap[userId];
     io.emit("getOnlineUsers", Object.keys(userSocketMap));
-  });
-});
+  })
+})
 
 app.use(express.json({ limit: "4mb" }));
 app.use(cors());
@@ -39,8 +39,8 @@ await connectDB();
 
 if(process.env.NODE_ENV !== "production"){
 const PORT = process.env.PORT || 5000;
-httpServer.listen(PORT, () => console.log("Server is running on PORT:" + PORT));
+server.listen(PORT, () => console.log("Server is running on PORT:" + PORT));
 
 }
 
-export default Server;
+export default server;
