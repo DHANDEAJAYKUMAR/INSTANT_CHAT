@@ -57,25 +57,24 @@ A full-stack real-time chat web application where users can register, login, upd
  
 ###  Clone the Repository
 ```
-git clone <a href="https://drive.google.com/file/d/13scE17wpIXxGR5eGrWZ2UMwdS0512GYI/view" target="_blank">[Click](https://drive.google.com/file/d/13scE17wpIXxGR5eGrWZ2UMwdS0512GYI/view)</a>
+git clone <a href="https://drive.google.com/file/d/13scE17wpIXxGR5eGrWZ2UMwdS0512GYI/view" target="_blank">Click</a>
 
 cd instant-chat-app
 
-`**Backend Setup**`
+Backend Setup
 cd server
 npm install
 npm run dev
-
-`**Note**`: Create a .env file in the /server directory with the following:
-
+```
+**Note**: Create a .env file in the /server directory with the following:
+```
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 
-`**Frontend Setup**`
+Frontend Setup
 cd client
 npm install
 npm run dev
-
 
 ```
 
@@ -121,14 +120,12 @@ instant-chat-app/
 </pre>
 
    
- ```
-`**Live Demo**`
+
+**Live Demo**
 <p>Try it Live Here → <a href="https://instant-chat-frontend-side-git-main-ajay-kumar-dhandes-projects.vercel.app/" target="_blank">Click to Open</a></p>
 
-`**Demo Video**`
- [ Watch Demo Video](https://drive.google.com/file/d/13scE17wpIXxGR5eGrWZ2UMwdS0512GYI/view)
-```
-
+**Demo Video**
+ <a href="https://drive.google.com/file/d/13scE17wpIXxGR5eGrWZ2UMwdS0512GYI/view" target="_blank">Click to Open</a>
 
 ##  Future Improvements  
 <ul>
