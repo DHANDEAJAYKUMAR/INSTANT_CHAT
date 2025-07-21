@@ -10,7 +10,7 @@ A full-stack real-time chat web application that allows users to register, log i
 - [Tech Stack](#-tech-stack)
 - [Installation](#️-installation)
 - [Usage](#️-usage)
-- [Project Structure](#️-project-structure)
+- [Project Structure](#-project-structure)
 - [Live Demo](#-live-demo)
 - [Future Improvements](#-future-improvements)
 - [License](#-license)
@@ -56,6 +56,7 @@ A full-stack real-time chat web application that allows users to register, log i
 git clone https://github.com/YOUR_USERNAME/instant-chat-app.git
 cd instant-chat-app
 🖥️ Backend Setup
+
 bash
 Copy
 Edit
@@ -71,6 +72,7 @@ PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 🌐 Frontend Setup
+
 bash
 Copy
 Edit
@@ -117,13 +119,9 @@ instant-chat-app/
 
 🔮 Future Improvements
 💡 Group Chat Support
-
 🖼️ Media/File Sharing in Messages
-
 🔔 Push Notifications
-
 📱 PWA Support for Mobile Devices
-
 🧠 AI Bot Integration for Fun 🤖
 
 📜 License
