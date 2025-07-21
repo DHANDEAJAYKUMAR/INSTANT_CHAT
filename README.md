@@ -90,7 +90,7 @@ Chat with users in real time
 Update your profile with name, bio, and image
 
 ---
-<hr>
+
 
 ## Project Structure
 instant-chat-app/
@@ -118,13 +118,13 @@ instant-chat-app/
 </pre>
 
     ---
-    <hr>
+ 
 ## Live Demo
  Try it Live Here →
  Instant Chat App Demo
 
 ---
-<hr>
+
 ##  Future Improvements  
  Group Chat Support  
  Media/File Sharing in Messages  
@@ -133,7 +133,7 @@ instant-chat-app/
  AI Bot Integration for Fun 
 
 ---
-<hr>
+
 ## License
 This project is licensed under the MIT License.  
 See the LICENSE file for more information.
