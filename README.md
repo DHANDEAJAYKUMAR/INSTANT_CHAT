@@ -18,62 +18,61 @@ A full-stack real-time chat web application that allows users to register, log i
 ---
 
 ##  Features
-
--  JWT-based User Authentication (Signup/Login)
--  Profile Management (Image + Bio + Name)
--  Real-Time 1-on-1 Chat using WebSockets
--  Live Online Status Indicator
--  Beautiful and Responsive UI
--  Toast Notifications for Errors & Success
-
+<ul>
+-  <li>JWT-based User Authentication (Signup/Login)</li>
+- <li> Profile Management (Image + Bio + Name)</li>
+-  <li>Real-Time 1-on-1 Chat using WebSockets</li>
+-  <li>Live Online Status Indicator</li>
+-  <li>Beautiful and Responsive UI</li>
+-  <li>Toast Notifications for Errors & Success</li>
+</ul>
 ---
 
 ##  Tech Stack
 
 ### Frontend
-- **React.js** – for the dynamic UI
-- **Tailwind CSS** – utility-first styling
-- **Axios** – handling API requests
-
+<ul>
+- <li>**React.js** – for the dynamic UI</li>
+- <li>**Tailwind CSS** – utility-first styling</li>
+- <li>**Axios** – handling API requests</li>
+</ul>
 ### Backend
-- **Node.js + Express** – server and routing
-- **MongoDB + Mongoose** – database & schema
-- **Socket.IO** – real-time communication
-- **JWT (jsonwebtoken)** – secure authentication
-
+<ul>
+- <li>**Node.js + Express** – server and routing</li>
+- <li>**MongoDB + Mongoose** – database & schema</li>
+- <li>**Socket.IO** – real-time communication</li>
+- <li>**JWT (jsonwebtoken)** – secure authentication</li>
+</ul>
 ---
 
 ##  Installation
 
 ###  Prerequisites
-- Node.js & npm
-- MongoDB running locally or a cloud instance (MongoDB Atlas)
-- Vite (optional, if you're using Vite for React)
-
+<ul>
+-<li> Node.js & npm</li>
+- <li>MongoDB running locally or a cloud instance (MongoDB Atlas)</li>
+- <li>Vite (optional, if you're using Vite for React)</li>
+</ul>
 ###  Clone the Repository
-
 
 git clone https://github.com/YOUR_USERNAME/instant-chat-app.git
 cd instant-chat-app
+
 🖥 Backend Setup
-bash
-Copy
-Edit
+
 cd server
 npm install
 npm run dev
+
 Note: Create a .env file in the /server directory with the following:
 
 env
-Copy
-Edit
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
+
  Frontend Setup
-bash
-Copy
-Edit
+
 cd client
 npm install
 npm run dev
@@ -81,14 +80,15 @@ npm run dev
 ---
 
 ## Usage
-Open your browser and go to http://localhost:5173
+<ul>
+<li>Open your browser and go to http://localhost:5173</li>
 
-Register or login to your account
+<li>Register or login to your account</li>
 
-Chat with users in real time
+<li>Chat with users in real time</li>
 
-Update your profile with name, bio, and image
-
+<li>Update your profile with name, bio, and image</li>
+</ul>
 ---
 
 
@@ -126,14 +126,17 @@ instant-chat-app/
 ---
 
 ##  Future Improvements  
- Group Chat Support  
- Media/File Sharing in Messages  
- Push Notifications  
- PWA Support for Mobile Devices  
- AI Bot Integration for Fun 
-
+<ul>
+ <li>Group Chat Support  </li>
+ <li>Media/File Sharing in Messages  </li>
+ <li>Push Notifications  </li>
+ <li>PWA Support for Mobile Devices  </li>
+ <li>AI Bot Integration for Fun </li>
+</ul>
 ---
 
 ## License
-This project is licensed under the MIT License.  
+This project is licensed under the MIT License.
 See the LICENSE file for more information.
+
+
