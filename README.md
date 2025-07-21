@@ -50,41 +50,37 @@ A full-stack real-time chat web application where users can register, login, upd
 <ul>
 <li> Node.js & npm</li>
  <li>MongoDB running locally or a cloud instance (MongoDB Atlas)</li>
- <li>Vite (optional, if you're using Vite for React)</li>
+ <li>Vite</li>
 </ul>
 
 <prev>
  
 ###  Clone the Repository
-
+```
 git clone https://github.com/DHANDEAJAYKUMAR/INSTANT_CHAT.git
 cd instant-chat-app
 
-🖥 Backend Setup
-<prev>
+**Backend Setup**
 cd server
 npm install
 npm run dev
-</prev>
-<b>Note</b>: Create a .env file in the /server directory with the following:
-<prev>
-env
-PORT=5000
+
+**Note**: Create a .env file in the /server directory with the following:
+
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-</prev>
- Frontend Setup
-<prev>
+
+**Frontend Setup**
 cd client
 npm install
 npm run dev
-</prev>
-</prev>
 
+
+```
 
 ## Usage
 <ul>
-<li>Open your browser and go to http://localhost:5173</li>
+<li>Open your browser and navigate to the URL displayed in the terminal</li>
 
 <li>Register or login to your account</li>
 
@@ -126,12 +122,11 @@ instant-chat-app/
    
  <pre>
   
-<h4>Live Demo</h4>
-<p>Try it Live Here → <a href="https://instant-chat-frontend-side-git-main-ajay-kumar-dhandes-projects.vercel.app/" target="_blank">https://instant-chat-frontend-side-git-main-ajay-kumar-dhandes-projects.vercel.app/</a></p>
+**Live Demo**
+<p>Try it Live Here → <a href="https://instant-chat-frontend-side-git-main-ajay-kumar-dhandes-projects.vercel.app/" target="_blank">Click to Open</a></p>
 
-<h4>Demo Video</h4>
-<iframe src="https://drive.google.com/file/d/13scE17wpIXxGR5eGrWZ2UMwdS0512GYI/preview" width="640" height="360" allow="autoplay" allowfullscreen></iframe>
-
+**Demo Video**
+ [Watch Demo Video](https://drive.google.com/file/d/13scE17wpIXxGR5eGrWZ2UMwdS0512GYI/view)
 </pre>
 
 
@@ -146,7 +141,7 @@ instant-chat-app/
 
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License.<br>
 See the LICENSE file for more information.
 
 
