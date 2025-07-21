@@ -1,25 +1,48 @@
-import React, { useState, useContext } from 'react'
-import assets from '../assets/assets'
-import { AuthContext } from '../../context/AuthContext'
+import React, { useState, useContext } from 'react';
+import assets from '../assets/assets';
+import { AuthContext } from '../../context/AuthContext';
 
 const LoginPage = () => {
-  const [currState, setCurrState] = useState("Sign up")
-  const [fullName, setFullName] = useState("")
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [bio, setBio] = useState("")
-  const [isDataSubmitted, setIsDataSubmitted] = useState(false)
+  const [currState, setCurrState] = useState("Sign up");
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [bio, setBio] = useState("");
+  const [profilePic, setProfilePic] = useState(null);
+  const [isDataSubmitted, setIsDataSubmitted] = useState(false);
 
-  const { login } = useContext(AuthContext)
+  const { login } = useContext(AuthContext);
 
-  const onSubmitHandler = (event) => {
-    event.preventDefault()
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) setProfilePic(file);
+  };
+
+  const onSubmitHandler = async (event) => {
+    event.preventDefault();
+
     if (currState === 'Sign up' && !isDataSubmitted) {
-      setIsDataSubmitted(true)
-      return
+      setIsDataSubmitted(true);
+      return;
     }
-    login(currState === "Sign up" ? 'signup' : 'login', { fullName, email, password, bio })
-  }
+
+    let profilePicBase64 = null;
+    if (profilePic) {
+      const reader = new FileReader();
+      reader.readAsDataURL(profilePic);
+      await new Promise((resolve) => {
+        reader.onload = () => {
+          profilePicBase64 = reader.result;
+          resolve();
+        };
+      });
+    }
+
+    login(
+      currState === "Sign up" ? 'signup' : 'login',
+      { fullName, email, password, bio, profilePic: profilePicBase64 }
+    );
+  };
 
   return (
     <div className='min-h-screen bg-cover bg-center flex items-center justify-center gap-8 sm:justify-evenly max-sm:flex-col backdrop-blur-2xl'>
@@ -64,14 +87,31 @@ const LoginPage = () => {
         )}
 
         {currState === "Sign up" && isDataSubmitted && (
-          <textarea
-            onChange={(e) => setBio(e.target.value)}
-            value={bio}
-            rows={4}
-            className='p-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500'
-            placeholder='Provide a short bio...'
-            required
-          ></textarea>
+          <>
+            <textarea
+              onChange={(e) => setBio(e.target.value)}
+              value={bio}
+              rows={4}
+              className='p-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500'
+              placeholder='Provide a short bio...'
+              required
+            ></textarea>
+
+            <label className='flex items-center gap-2 text-sm cursor-pointer'>
+              <input
+                type="file"
+                accept=".jpg, .jpeg, .png"
+                onChange={handleImageUpload}
+                hidden
+              />
+              <img
+                src={profilePic ? URL.createObjectURL(profilePic) : assets.avatar_icon}
+                alt="Preview"
+                className="w-10 h-10 rounded-full border"
+              />
+              Upload Profile Photo (optional)
+            </label>
+          </>
         )}
 
         <button type='submit' className='py-3 bg-gradient-to-r from-purple-400 to-violet-600 text-white rounded-md cursor-pointer'>
@@ -87,20 +127,20 @@ const LoginPage = () => {
           {currState === "Sign up" ? (
             <p className='text-sm text-gray-600'>
               Already have an account? <span
-                onClick={() => { setCurrState("Login"); setIsDataSubmitted(false) }}
+                onClick={() => { setCurrState("Login"); setIsDataSubmitted(false); }}
                 className='font-medium text-violet-500 cursor-pointer'>Login here</span>
             </p>
           ) : (
             <p className='text-sm text-gray-600'>
               Create an account <span
-                onClick={() => { setCurrState("Sign up"); setIsDataSubmitted(false) }}
+                onClick={() => { setCurrState("Sign up"); setIsDataSubmitted(false); }}
                 className='font-medium text-violet-500 cursor-pointer'>Click here</span>
             </p>
           )}
         </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default LoginPage
+export default LoginPage;
