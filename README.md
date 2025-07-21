@@ -56,9 +56,9 @@ A full-stack real-time chat web application where users can register, login, upd
 <prev>
  
 ###  Clone the Repository
-```
-git clone <a href="https://instant-chat-frontend-side-git-main-ajay-kumar-dhandes-projects.vercel.app/" target="_blank">Click to Open</a>
 
+git clone <a href="https://instant-chat-frontend-side-git-main-ajay-kumar-dhandes-projects.vercel.app/" target="_blank">Click to Open</a>
+```
 cd instant-chat-app
 
 Backend Setup
