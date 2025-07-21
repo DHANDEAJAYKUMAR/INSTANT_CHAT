@@ -34,12 +34,13 @@ A full-stack real-time chat web application where users can register, login, upd
  <li>Tailwind CSS – utility-first styling</li>
  <li>Axios – handling API requests</li>
 </ul>
+
 ### Backend
 <ul>
- <li>**Node.js + Express** – server and routing</li>
- <li>**MongoDB + Mongoose** – database & schema</li>
- <li>**Socket.IO** – real-time communication</li>
- <li>**JWT (jsonwebtoken)** – secure authentication</li>
+ <li>Node.js + Express – server and routing</li>
+ <li>MongoDB + Mongoose – database & schema</li>
+ <li>Socket.IO – real-time communication</li>
+ <li>JWT (jsonwebtoken) – secure authentication</li>
 </ul>
 
 
@@ -51,30 +52,33 @@ A full-stack real-time chat web application where users can register, login, upd
  <li>MongoDB running locally or a cloud instance (MongoDB Atlas)</li>
  <li>Vite (optional, if you're using Vite for React)</li>
 </ul>
+
 <prev>
+ 
 ###  Clone the Repository
 
-git clone https://github.com/YOUR_USERNAME/instant-chat-app.git
+git clone https://github.com/DHANDEAJAYKUMAR/INSTANT_CHAT.git
 cd instant-chat-app
 
 🖥 Backend Setup
-
+<prev>
 cd server
 npm install
 npm run dev
-
-Note: Create a .env file in the /server directory with the following:
-
+</prev>
+<b>Note</b>: Create a .env file in the /server directory with the following:
+<prev>
 env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-
+</prev>
  Frontend Setup
-
+<prev>
 cd client
 npm install
 npm run dev
+</prev>
 </prev>
 
 
