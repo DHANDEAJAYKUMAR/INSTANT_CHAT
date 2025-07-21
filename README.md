@@ -60,17 +60,17 @@ A full-stack real-time chat web application where users can register, login, upd
 git clone https://github.com/DHANDEAJAYKUMAR/INSTANT_CHAT.git
 cd instant-chat-app
 
-**Backend Setup**
+<b>Backend Setup</b>
 cd server
 npm install
 npm run dev
 
-**Note**: Create a .env file in the /server directory with the following:
+<b>Note</b>: Create a .env file in the /server directory with the following:
 
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 
-**Frontend Setup**
+<b>Frontend Setup</b>
 cd client
 npm install
 npm run dev
@@ -121,12 +121,11 @@ instant-chat-app/
 
    
  <pre>
-  
-**Live Demo**
+<b>Live Demo</b>
 <p>Try it Live Here → <a href="https://instant-chat-frontend-side-git-main-ajay-kumar-dhandes-projects.vercel.app/" target="_blank">Click to Open</a></p>
 
-**Demo Video**
- [Watch Demo Video](https://drive.google.com/file/d/13scE17wpIXxGR5eGrWZ2UMwdS0512GYI/view)
+<b>Demo Video</b>
+ [ Watch Demo Video](https://drive.google.com/file/d/13scE17wpIXxGR5eGrWZ2UMwdS0512GYI/view)
 </pre>
 
 
