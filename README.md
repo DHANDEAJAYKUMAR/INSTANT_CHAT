@@ -1,8 +1,6 @@
-#  Instant Chat App
+#  Instant Chat - Real-Time Messaging Web App
 
-A full-stack real-time chat web application that allows users to register, log in, update profiles, and chat instantly with others. Built using **React**, **Node.js**, **MongoDB**, and **Socket.IO** for seamless messaging.
-
----
+A full-stack real-time chat web application where users can register, login, update their profiles, and chat instantly with others. Built using **MERN Stack** with **Socket.IO** for live messaging.
 
 ##  Table of Contents
 
@@ -15,7 +13,7 @@ A full-stack real-time chat web application that allows users to register, log i
 - [Future Improvements](#future-improvements)
 - [License](#license)
 
----
+
 
 ##  Features
 <ul>
@@ -26,7 +24,7 @@ A full-stack real-time chat web application that allows users to register, log i
 -  <li>Beautiful and Responsive UI</li>
 -  <li>Toast Notifications for Errors & Success</li>
 </ul>
----
+
 
 ##  Tech Stack
 
@@ -43,7 +41,7 @@ A full-stack real-time chat web application that allows users to register, log i
 - <li>**Socket.IO** – real-time communication</li>
 - <li>**JWT (jsonwebtoken)** – secure authentication</li>
 </ul>
----
+
 
 ##  Installation
 
@@ -53,6 +51,7 @@ A full-stack real-time chat web application that allows users to register, log i
 - <li>MongoDB running locally or a cloud instance (MongoDB Atlas)</li>
 - <li>Vite (optional, if you're using Vite for React)</li>
 </ul>
+<prev>
 ###  Clone the Repository
 
 git clone https://github.com/YOUR_USERNAME/instant-chat-app.git
@@ -76,8 +75,8 @@ JWT_SECRET=your_jwt_secret
 cd client
 npm install
 npm run dev
+</prev>
 
----
 
 ## Usage
 <ul>
@@ -89,41 +88,46 @@ npm run dev
 
 <li>Update your profile with name, bio, and image</li>
 </ul>
----
+
 
 
 ## Project Structure
 instant-chat-app/
----
+
 <pre>
-├── server/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   ├── socket/
-│   ├── .env
-│   └── server.js
----
-└── client/
-    ├── public/
-    ├── src/
-    │   ├── assets/
-    │   ├── components/
-    │   ├── context/
-    │   ├── pages/
-    │   └── App.jsx
-    ├── .env
-    └── vite.config.js
+instant-chat-app/
+│
+├── server/                          # Backend server for API and socket logic
+│   ├── controllers/                # Handle business logic for routes (e.g., user auth, messages)
+│   ├── middleware/                # Custom middleware like auth checks, error handlers
+│   ├── models/                    # Mongoose/Sequelize models for DB schema (User, Message, etc.)
+│   ├── routes/                    # API endpoint definitions (e.g., /api/users, /api/messages)
+│   ├── socket/                    # Socket.io logic for real-time messaging
+│   ├── .env                       # Environment variables (DB URI, PORT, secrets)
+│   └── server.js                  # Entry point for Express server and Socket.io integration
+│
+└── client/                         # Frontend using React + Vite
+    ├── public/                    # Static files like index.html, favicon
+    ├── src/                       # Main source code folder
+    │   ├── assets/                # Images, icons, and other media assets
+    │   ├── components/            # Reusable UI components (e.g., ChatBox, InputField)
+    │   ├── context/               # React Context for global state (e.g., user/auth context)
+    │   ├── pages/                 # Pages like Login, Register, Chat, etc.
+    │   └── App.jsx                # Root component with routing and layout setup
+    ├── .env                       # Frontend environment variables (e.g., API URL)
+    └── vite.config.js             # Vite configuration for bundling the frontend
+
 </pre>
 
    
- 
+ <pre>
 ## Live Demo
  Try it Live Here →
- Instant Chat App Demo
+ https://instant-chat-frontend-side-git-main-ajay-kumar-dhandes-projects.vercel.app/
+  <h2>Demo Video</h2>
+  <video src="CHAT_WEBSITE.mp4" controls width="600"></video>
+</pre>
 
----
 
 ##  Future Improvements  
 <ul>
@@ -133,10 +137,11 @@ instant-chat-app/
  <li>PWA Support for Mobile Devices  </li>
  <li>AI Bot Integration for Fun </li>
 </ul>
----
+
 
 ## License
 This project is licensed under the MIT License.
 See the LICENSE file for more information.
+
 
 
