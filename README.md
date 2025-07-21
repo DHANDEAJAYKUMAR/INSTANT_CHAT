@@ -17,12 +17,12 @@ A full-stack real-time chat web application where users can register, login, upd
 
 ##  Features
 <ul>
--  <li>JWT-based User Authentication (Signup/Login)</li>
-- <li> Profile Management (Image + Bio + Name)</li>
--  <li>Real-Time 1-on-1 Chat using WebSockets</li>
--  <li>Live Online Status Indicator</li>
--  <li>Beautiful and Responsive UI</li>
--  <li>Toast Notifications for Errors & Success</li>
+ <li>JWT-based User Authentication (Signup/Login)</li>
+ <li> Profile Management (Image + Bio + Name)</li>
+  <li>Real-Time 1-on-1 Chat using WebSockets</li>
+  <li>Live Online Status Indicator</li>
+  <li>Beautiful and Responsive UI</li>
+  <li>Toast Notifications for Errors & Success</li>
 </ul>
 
 
@@ -30,16 +30,16 @@ A full-stack real-time chat web application where users can register, login, upd
 
 ### Frontend
 <ul>
-- <li>**React.js** – for the dynamic UI</li>
-- <li>**Tailwind CSS** – utility-first styling</li>
-- <li>**Axios** – handling API requests</li>
+ <li>React.js – for the dynamic UI</li>
+ <li>Tailwind CSS – utility-first styling</li>
+ <li>Axios – handling API requests</li>
 </ul>
 ### Backend
 <ul>
-- <li>**Node.js + Express** – server and routing</li>
-- <li>**MongoDB + Mongoose** – database & schema</li>
-- <li>**Socket.IO** – real-time communication</li>
-- <li>**JWT (jsonwebtoken)** – secure authentication</li>
+ <li>**Node.js + Express** – server and routing</li>
+ <li>**MongoDB + Mongoose** – database & schema</li>
+ <li>**Socket.IO** – real-time communication</li>
+ <li>**JWT (jsonwebtoken)** – secure authentication</li>
 </ul>
 
 
@@ -47,9 +47,9 @@ A full-stack real-time chat web application where users can register, login, upd
 
 ###  Prerequisites
 <ul>
--<li> Node.js & npm</li>
-- <li>MongoDB running locally or a cloud instance (MongoDB Atlas)</li>
-- <li>Vite (optional, if you're using Vite for React)</li>
+<li> Node.js & npm</li>
+ <li>MongoDB running locally or a cloud instance (MongoDB Atlas)</li>
+ <li>Vite (optional, if you're using Vite for React)</li>
 </ul>
 <prev>
 ###  Clone the Repository
@@ -121,11 +121,13 @@ instant-chat-app/
 
    
  <pre>
-## Live Demo
- Try it Live Here →
- https://instant-chat-frontend-side-git-main-ajay-kumar-dhandes-projects.vercel.app/
-  <h2>Demo Video</h2>
-  <video src="CHAT_WEBSITE.mp4" controls width="600"></video>
+  
+<h4>Live Demo</h4>
+<p>Try it Live Here → <a href="https://instant-chat-frontend-side-git-main-ajay-kumar-dhandes-projects.vercel.app/" target="_blank">https://instant-chat-frontend-side-git-main-ajay-kumar-dhandes-projects.vercel.app/</a></p>
+
+<h4>Demo Video</h4>
+<iframe src="https://drive.google.com/file/d/13scE17wpIXxGR5eGrWZ2UMwdS0512GYI/preview" width="640" height="360" allow="autoplay" allowfullscreen></iframe>
+
 </pre>
 
 
