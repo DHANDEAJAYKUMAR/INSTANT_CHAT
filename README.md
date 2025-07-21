@@ -117,7 +117,7 @@ instant-chat-app/
     └── vite.config.js
 </pre>
 
-    ---
+   
  
 ## Live Demo
  Try it Live Here →
