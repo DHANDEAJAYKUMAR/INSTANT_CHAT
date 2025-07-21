@@ -92,7 +92,7 @@ Update your profile with name, bio, and image
 ---
 
 ## Project Structure
-pgsql
+```pgsql
 Copy
 Edit
 instant-chat-app/
@@ -115,7 +115,7 @@ instant-chat-app/
     │   ├── pages/
     │   └── App.jsx
     ├── .env
-    └── vite.config.js
+    └── vite.config.js```
 
     ---
     
