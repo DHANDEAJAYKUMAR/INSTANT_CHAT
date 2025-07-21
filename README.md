@@ -79,7 +79,7 @@ Edit
 cd client
 npm install
 npm run dev
-🖥️ Usage
+🖥️ ## Usage
 Open your browser and go to http://localhost:5173
 
 Register or login to your account
@@ -88,7 +88,7 @@ Chat with users in real time
 
 Update your profile with name, bio, and image
 
-🗂️ Project Structure
+🗂️ ## Project Structure
 pgsql
 Copy
 Edit
@@ -113,17 +113,17 @@ instant-chat-app/
     │   └── App.jsx
     ├── .env
     └── vite.config.js
-🌍 Live Demo
+🌍 ## Live Demo
 🚀 Try it Live Here →
 👉 Instant Chat App Demo
 
-🔮 Future Improvements
+🔮 ## Future Improvements
 💡 Group Chat Support
 🖼️ Media/File Sharing in Messages
 🔔 Push Notifications
 📱 PWA Support for Mobile Devices
 🧠 AI Bot Integration for Fun 🤖
 
-📜 License
+📜 ## License
 This project is licensed under the MIT License.
 See the LICENSE file for more information.
