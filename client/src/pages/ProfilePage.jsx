@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import assets from '../assets/assets';
+import { AuthContext } from '../../context/AuthContext';
 
 const ProfilePage = () => {
     const { authUser, updateProfile } = useContext(AuthContext);
@@ -76,6 +77,7 @@ const ProfilePage = () => {
                         </button>
                     </form>
 
+                   
                     <div className='max-w-44 aspect-square rounded-full mx-10 max-sm:mt-10'>
                         <img
                             className='w-full h-full object-cover rounded-full border-2 border-white shadow-md'
