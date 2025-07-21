@@ -1,47 +1,29 @@
-import React, { useContext } from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage';
-import ProfilePage from './pages/ProfilePage';
-import { Toaster } from "react-hot-toast";
-import { AuthContext } from '../context/AuthContext';
+import jwt from "jsonwebtoken";
+import User from "../models/User.js";
 
-const App = () => {
-  const { authUser } = useContext(AuthContext);
+export const protectRoute = async (req, res, next) => {
+  try {
+    const token = req.headers.token;
+    if (!token) {
+      return res.status(401).json({ success: false, message: "No token provided" });
+    }
 
-  return (
-    <div className="bg-[url('/bgImage.svg')] bg-contain min-h-screen">
-      <Toaster />
-      
-      {authUser && (
-        <div className="flex items-center gap-3 p-4">
-          <img
-            src={authUser.profilePic || "/default-user-icon.png"}
-            alt="Profile"
-            className="h-10 w-10 rounded-full object-cover border border-white"
-          />
-          <span className="text-white text-lg font-semibold">
-            Hi {authUser.fullName}
-          </span>
-        </div>
-      )}
+    const decoded = jwt.verify(token, process.env.JWT_SECRET, {
+      clockTolerance: 10, 
+    });
 
-      <Routes>
-        <Route
-          path="/"
-          element={authUser ? <HomePage /> : <Navigate to="/login" />}
-        />
-        <Route
-          path="/login"
-          element={!authUser ? <LoginPage /> : <Navigate to="/" />}
-        />
-        <Route
-          path="/profile"
-          element={authUser ? <ProfilePage /> : <Navigate to="/login" />}
-        />
-      </Routes>
-    </div>
-  );
+    const user = await User.findById(decoded.userId).select("-password");
+    if (!user) {
+      return res.status(404).json({ success: false, message: "User not found" });
+    }
+
+    req.user = user;
+    next();
+  } catch (error) {
+    res.status(401).json({ success: false, message: error.message });
+  }
 };
 
-export default App;
+export const checkAuth = (req, res) => {
+  res.json({ success: true, user: req.user });
+};
