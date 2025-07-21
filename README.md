@@ -1,10 +1,10 @@
-# 💬 Instant Chat App
+#  Instant Chat App
 
 A full-stack real-time chat web application that allows users to register, log in, update profiles, and chat instantly with others. Built using **React**, **Node.js**, **MongoDB**, and **Socket.IO** for seamless messaging.
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -17,18 +17,18 @@ A full-stack real-time chat web application that allows users to register, log i
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔐 JWT-based User Authentication (Signup/Login)
-- ✍️ Profile Management (Image + Bio + Name)
-- 💬 Real-Time 1-on-1 Chat using WebSockets
-- 📡 Live Online Status Indicator
-- 🚀 Beautiful and Responsive UI
-- ⚠️ Toast Notifications for Errors & Success
+-  JWT-based User Authentication (Signup/Login)
+-  Profile Management (Image + Bio + Name)
+-  Real-Time 1-on-1 Chat using WebSockets
+-  Live Online Status Indicator
+-  Beautiful and Responsive UI
+-  Toast Notifications for Errors & Success
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - **React.js** – for the dynamic UI
@@ -43,19 +43,19 @@ A full-stack real-time chat web application that allows users to register, log i
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
-### 🧾 Prerequisites
+###  Prerequisites
 - Node.js & npm
 - MongoDB running locally or a cloud instance (MongoDB Atlas)
 - Vite (optional, if you're using Vite for React)
 
-### 🔄 Clone the Repository
+###  Clone the Repository
 
 
 git clone https://github.com/YOUR_USERNAME/instant-chat-app.git
 cd instant-chat-app
-🖥️ Backend Setup
+🖥 Backend Setup
 bash
 Copy
 Edit
@@ -70,7 +70,7 @@ Edit
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-🌐 Frontend Setup
+ Frontend Setup
 bash
 Copy
 Edit
@@ -80,7 +80,7 @@ npm run dev
 
 ---
 
-##🖥️ Usage
+## Usage
 Open your browser and go to http://localhost:5173
 
 Register or login to your account
@@ -91,7 +91,7 @@ Update your profile with name, bio, and image
 
 ---
 
-##🗂️ Project Structure
+## Project Structure
 pgsql
 Copy
 Edit
@@ -119,21 +119,21 @@ instant-chat-app/
 
     ---
     
-##🌍 Live Demo
-🚀 Try it Live Here →
-👉 Instant Chat App Demo
+## Live Demo
+ Try it Live Here →
+ Instant Chat App Demo
 
 ---
 
-## 🔮 Future Improvements  
-💡 Group Chat Support  
-🖼️ Media/File Sharing in Messages  
-🔔 Push Notifications  
-📱 PWA Support for Mobile Devices  
-🧠 AI Bot Integration for Fun 🤖
+##  Future Improvements  
+ Group Chat Support  
+ Media/File Sharing in Messages  
+ Push Notifications  
+ PWA Support for Mobile Devices  
+ AI Bot Integration for Fun 
 
 ---
 
-##📜 License
+## License
 This project is licensed under the MIT License.  
 See the LICENSE file for more information.
