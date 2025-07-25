@@ -137,9 +137,6 @@ instant-chat-app/
 </ul>
 
 
-## License
-This project is licensed under the MIT License.<br>
-See the LICENSE file for more information.
 
 
 
