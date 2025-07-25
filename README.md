@@ -11,7 +11,6 @@ A full-stack real-time chat web application where users can register, login, upd
 - [Project Structure](#project-structure)
 - [Live Demo](#live-demo)
 - [Future Improvements](#future-improvements)
-- [License](#license)
 
 
 
